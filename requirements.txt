@@ -1,0 +1,4 @@
+fastapi>=0.100.0
+uvicorn>=0.22.0
+markitdown[pdf]>=0.0.1a2
+python-multipart>=0.0.6

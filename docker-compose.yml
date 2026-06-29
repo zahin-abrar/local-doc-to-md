@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  converter:
+    build: .
+    container_name: doc-to-md-converter
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./uploads:/app/uploads
+      - ./outputs:/app/outputs
+    restart: unless-stopped
